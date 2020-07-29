@@ -1,0 +1,9 @@
+
+<%- include('header'); -%>
+<%- include('./navbar') %>
+<title>Info</title>
+
+    <h1>Views:  <%= views %></h1>
+    
+    <p>Hello : <%= currentUser ? (currentUser.token ? 'Vui long kich hoat tai khoan ' : currentUser.displayName ):'Guest' %> </p>
+<%- include('footer'); -%>
